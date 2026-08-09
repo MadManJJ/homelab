@@ -1,0 +1,6 @@
+- resources:
+    label: Server Health
+    cpu: true
+    memory: true
+    disk: /
+    uptime: true
