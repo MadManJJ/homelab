@@ -2,10 +2,12 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- Smart Home:
+    - Home Assistant:
+        icon: home-assistant.png
+        href: http://{{HOMEPAGE_VAR_TAILSCALE_IP}}:8123
+        description: Home Automation Server
+        widget:
+          type: homeassistant
+          url: http://172.17.0.1:8123
+          key: {{HOMEPAGE_VAR_ASSISTANT_TOKEN}}
