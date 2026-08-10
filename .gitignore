@@ -1,0 +1,29 @@
+# Environment files containing secrets
+.env
+.env.*
+!.env.example
+
+# General logs and caches
+**/logs/
+**/*.log
+**/*.log.*
+**/*.fault
+
+# General database files
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# Storage and media volumes
+**/data/
+**/media/
+
+# Home Assistant specific exclusions
+**/secrets.yaml
+**/.HA_RESTORE_STATE
+**/.storage/
+**/tts/
+**/deps/
+**/ip_bans.yaml
