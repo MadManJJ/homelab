@@ -23,7 +23,18 @@
 # Home Assistant specific exclusions
 **/secrets.yaml
 **/.HA_RESTORE_STATE
+**/.HA_VERSION
+**/.cache
+**/.ha_run.lock
 **/.storage/
 **/tts/
 **/deps/
 **/ip_bans.yaml
+**/known_devices.yaml
+**/.cloud/
+
+# Security, SSL certificates, and keys
+*.pem
+*.crt
+*.key
+*.pfx
