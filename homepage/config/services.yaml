@@ -11,3 +11,14 @@
           type: homeassistant
           url: http://172.17.0.1:8123
           key: {{HOMEPAGE_VAR_ASSISTANT_TOKEN}}
+
+- Storage:
+    - Filebrowser:
+        icon: filebrowser.png
+        href: http://{{HOMEPAGE_VAR_TAILSCALE_IP}}:8081
+        description: Private File Manager
+        widget:
+          type: filebrowser
+          url: http://172.17.0.1:8081
+          username: {{HOMEPAGE_VAR_FILEBROWSER_USERNAME}}             
+          password: {{HOMEPAGE_VAR_FILEBROWSER_PASSWORD}}

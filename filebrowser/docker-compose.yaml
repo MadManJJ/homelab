@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:v2-s6
+    container_name: filebrowser
+    env_file:
+      - .env
+    ports:
+      - "${IP}:8081:80"
+      - "172.17.0.1:8081:80"
+    volumes:
+      - /home/$USER/Documents/Filebrowser:/srv
+      - ./data/filebrowser.db:/database/filebrowser.db
+      - ./settings.json:/.filebrowser.json
+    restart: unless-stopped
